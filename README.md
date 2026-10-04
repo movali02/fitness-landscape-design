@@ -33,8 +33,6 @@ where $`V_1`$ and $`V_2`$ are the free-phage abundances of the focal and referen
 - **Phenotype.** $`\lambda`$ sets the timing of lysis. Burst size follows the trade-off $`\beta(\lambda) = \rho\,(2/\lambda - \text{eclipse})`$, which is held fixed throughout: only the environment is optimised.
 - **A hard constraint.** At $`\lambda = \lambda_\text{ref}`$ the two strains are identical, so $`F(\lambda_\text{ref}) = 0`$ for every environment. Across 200 random environments the largest deviation was $`2\times10^{-17}`$. Every target is built to satisfy it.
 
-> **TODO (Mo):** add a one-line definition of each of the five environment parameters.
-
 ---
 
 ## 1. One environment for a dome
@@ -59,8 +57,6 @@ where $`V_1`$ and $`V_2`$ are the free-phage abundances of the focal and referen
 ![Approach A: target and fitted landscape](plots/approach_a_results.png)
 
 *Figure 1. Target landscape and the landscape of the optimised environment.*
-
-> **TODO (Mo):** final loss and parameter error, from `results_4_restarts/recovery.csv`.
 
 ## 2. Many environments give the same dome
 
@@ -95,8 +91,6 @@ prior p(θ_env) ──► ODE ──► (θ_env, F) pairs ──► conditional 
 ![Landscapes of posterior samples against the target](NF/nf_results/plots/05_posterior_predictive_landscapes.png)
 
 *Figure 5. Landscapes simulated from posterior samples, against the target.*
-
-> **TODO (Mo):** which parameters are identified and which are not (`results_100_restarts/identifiability.csv`, `NF/nf_results/posterior/posterior_summary.csv`), and the posterior-predictive error (`NF/nf_results/validation/posterior_predictive_summary.csv`). Swap Figure 4 for the pair with the clearest ridge.
 
 ## 3. A two-peaked target is out of reach
 
@@ -138,8 +132,6 @@ Peaks are counted on a finer grid than the one used for fitting, and by prominen
 ![2D target against best model surface](plots_exp3_75_restarts/04_target_vs_model_contours.png)
 
 *Figure 10. 2D target surface with two optima, against the best single-environment surface over 75 restarts.*
-
-> **TODO (Mo):** the number of environments in the sweep and the peak counts (`results_experimentzero/peak_count_summary.csv`); the best loss and number of prominent peaks for each target (`results_experiment1_200_restarts_sym/peaks.csv`, `results_experiment2/peaks.csv`, `results_experiment3_sym_75_restarts/optima.csv`).
 
 **What does set the number of peaks.** With the trade-off $`\beta(\lambda)`$ made non-monotone by a Gaussian bump, the landscape has two peaks (bump amplitude 0.136 gave equal peaks, 0.30 gave a 1:2.4 ratio). This is a positive control: it changes the organism and not the environment, and the bump has no biological justification yet.
 
@@ -186,8 +178,6 @@ Two design points turned out to be essential:
 *Figure 14. The same comparison with three windows.*
 
 **The baseline that matters.** A schedule with $`M`$ windows has $`M`$ times the parameters, so it must fit at least as well as one environment. Each schedule is compared with the best constant environment optimised with the same machinery and budget.
-
-> **TODO (Mo):** for M = 2 and M = 3: improvement over the best constant environment, number of prominent peaks and their height ratio, and loss on held-out initial states (`results_seeded_M*/validation.csv`, `tradeoff_peaks.csv`, `validation_report.json`).
 
 ## 5. From sampling solutions to the shape of the solution space
 
