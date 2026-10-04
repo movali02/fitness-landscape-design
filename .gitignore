@@ -1,0 +1,16 @@
+# ignore everything at the top level
+/*
+
+# then allow only these
+!/.gitignore
+!/README.md
+!/LICENSE
+!/NF/
+!/plots/
+!/plots_*/
+!/plot_experiment1_200_sym/
+
+# and never these, even inside an allowed folder
+results_*/
+plot_*.py
+*.jl

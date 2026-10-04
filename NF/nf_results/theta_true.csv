@@ -1,0 +1,6 @@
+parameter,value
+B0,1.0e6
+M0,100000.0
+delta,0.05
+r,0.08
+K,5.0e6
