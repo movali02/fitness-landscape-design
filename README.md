@@ -9,7 +9,7 @@ Inverse design on a differentiable ODE model of two phage strains competing for 
 2. **Many environments give the same dome.** The solution is not unique, and the set of solutions can be characterised.
 3. **A two-peaked target is out of reach.** No single environment reproduces a bimodal landscape.
 4. **A sequence of environments reaches it.** Extending the assay from one window of length $`T`$ to $`n`$ windows, and optimising the environment in each, makes bimodal landscapes attainable.
-5. **From sampling solutions to the shape of the solution space.** Persistent homology and related tools describe the topology of the set of solutions, where steps 2–4 only sample it. *(Planned.)*
+5. **From sampling solutions to the shape of the solution space.** Persistent homology and related tools describe the topology of the set of solutions, where steps 2–4 only sample it. (current work)
 
 | Step | Question | Architecture | Status |
 |---|---|---|---|
@@ -181,9 +181,9 @@ Two design points turned out to be essential:
 
 ## 5. From sampling solutions to the shape of the solution space
 
-*Planned.*
+ongoing work.
 
-**Question.** Steps 2–4 find solutions by sampling: restarts, posterior draws, random schedules. Can we say something general about the set of solutions itself? Is it one connected region or several? Does it have holes?
+**Question.** Steps 2–4 find solutions by sampling: restarts, posterior draws, random schedules. Can we say something general about the set of solutions itself? Is it one connected region or several? Does it have holes? need persistent homology tools...
 
 **Architecture.**
 
