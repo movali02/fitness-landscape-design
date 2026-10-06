@@ -3,7 +3,7 @@
 **Which environments produce a given fitness landscape?**
 Inverse design on a differentiable ODE model of two phage strains competing for bacterial hosts. The forward model maps an environment to a fitness landscape; this repository runs it backwards.
 
-## The storyline
+## TLDR
 
 1. **One environment for a dome.** Given a dome-shaped target landscape, gradient descent through the ODE finds an environment that produces it.
 2. **Many environments give the same dome.** The solution is not unique, and the set of solutions can be characterised.
